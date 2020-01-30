@@ -7,3 +7,39 @@ Content-Type: application/json
 }
 
 ###
+
+POST http://localhost:8080/students-api
+Content-Type: application/json
+
+{
+  "name": "SungYeol, Yun",
+  "age": 25
+}
+
+###
+
+GET http://localhost:8080/students-api
+Accept: application/json
+
+###
+
+POST http://localhost:8080/clazzes
+Content-Type: application/json
+
+{
+  "name": "Java 희망편",
+  "description": "이것만 알면 자바의 고수가 된다!",
+  "student": "http://localhost:8080/students-api/2"
+}
+
+###
+
+GET http://localhost:8080/
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/clazzes/4
+Content-Type: application/json
+
+###
